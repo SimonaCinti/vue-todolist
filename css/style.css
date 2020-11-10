@@ -23,6 +23,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 800px;
+    height: 800px;
     margin: 50px auto;
     padding: 30px 30px;
     background: #1D3557;
@@ -49,7 +50,7 @@ h1 {
 }
 
 .title i {
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 15px;
     padding-top: 5px; /*! da sistemare in qualche modo per mettere in verticale preciso*/
 }
@@ -71,6 +72,7 @@ h1 {
     border: 1px solid #c9c8c821;
     background-color: hsl(183, 43%, 90%);
     outline: none;
+    font-size: 18px;
 }
 
 .text-area .btn {
@@ -79,13 +81,24 @@ h1 {
     border-radius: 10px;
     font-family: 'Pacifico', cursive;
     letter-spacing: 2px;
+    font-size: 18px
 }
 
 
 /* List area */
 
+.list-area .todo-list {
+    list-style: none;
+}
 
-
+.list-area li {
+    display: flex;
+    background:#457B9D;
+    border: 1px solid black;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px
+}
 
 /*
 *** MOBILE VERSION ***
@@ -103,7 +116,7 @@ h1 {
 
     .text-area input#text {
         flex-basis: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
         padding: 20px;
     }
 
