@@ -25,18 +25,16 @@
         </div>
         <!-- Text Area -->
         <div class="text-area">
-            <input type="text" name="text" id="text" placeholder="Scrivi qui il tuo promemoria!">
+            <input type="text" name="text" id="text" placeholder="Scrivi qui il tuo promemoria!"
+            v-model="message"
+            @keyup.enter="addMessage()"  >
             <input class="btn"type="submit" value="Submit">
         </div>
         <!-- List Area -->
         <div class="list-area">
             <ul class="todo-list">
-                <li><span class="empy">Non ci sono Todo!</span></li>
-                <li><span>Fare i compiti.</span><i class="far fa-trash-alt"></i> </li>               
-                <li><span>Fare i compiti.</span><i class="far fa-trash-alt"></i> </li>               
-                <li><span>Fare i compiti.</span><i class="far fa-trash-alt"></i> </li>               
-                <li><span>Fare i compiti.</span><i class="far fa-trash-alt"></i> </li>               
-                
+                <!-- <li><span class="empy">Non ci sono Todo!</span></li> -->
+                <li><span></span><i class="far fa-trash-alt"></i> </li>                  
             </ul>
         </div>
     </div>
