@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Shake css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.3/csshake.min.css">
     <!-- Fontawesome -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
     <!-- Google Font -->
@@ -34,7 +36,7 @@
                     <li class="empty" v-if="indexValue">La tua lista è vuota! Inserisci un nuovo todo!</li>
                     <li v-for="(item, index) in todo">
                         <span>{{ item }}</span>
-                        <i class="far fa-trash-alt" @click="remove(index)"></i> 
+                        <i class="far fa-trash-alt shake" @click="remove(index)"></i> 
                     </li>                  
                 </ul>
             </div>
