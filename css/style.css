@@ -124,6 +124,7 @@ h1 {
 
 .list-area .empty {
     font-weight: bold;
+    justify-content: center;
 }
 
 /*
