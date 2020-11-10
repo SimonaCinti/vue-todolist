@@ -24,16 +24,34 @@ body {
     /* align-items: center; */
     width: 600px;
     margin: 50px auto;
-    border: 1px solid black;
     padding: 30px 30px;
     background: #1D3557;
+    border-radius: 10px;
+   box-shadow: 0px 0px 10px 9px rgba(50, 50, 50, 0.74);
 }
 
 /* Typography */
 
 h1 {
-    text-align: center;
+    text-align: center;   
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+
+/* Title */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
+}
+
+.title i {
+    font-size: 20px;
+    margin-left: 15px;
+    padding-top: 5px; /*! da sistemare in qualche modo per mettere in verticale preciso*/
 }
 
 /* Text Area Input */
@@ -49,10 +67,12 @@ h1 {
     flex-basis: 80%;
     padding: 10px;
     margin-right: 20px;
+    border-radius: 10px;
 }
 
 .text-area .btn {
     padding: 10px;
+    border-radius: 10px;
 }
 
 
