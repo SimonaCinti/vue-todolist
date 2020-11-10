@@ -21,6 +21,9 @@ const app = new Vue ({
               this.todo.push(this.userMessage);
             this.userMessage = '' 
            } 
+            if (this.todo.length !== 0) {
+                this.indexValue = false
+            }
            
         },
         remove(index) {
