@@ -108,6 +108,11 @@ h1 {
     cursor: pointer;
 }
 
+.list-area .empty {
+    font-weight: bold;
+    text-align: center;
+}
+
 /*
 *** MOBILE VERSION ***
 */

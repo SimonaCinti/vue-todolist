@@ -31,10 +31,10 @@
             <!-- List Area -->
             <div class="list-area">
                 <ul class="todo-list">
-                    <!-- <li><span class="empy">Non ci sono Todo!</span></li> -->
-                    <li v-for="item in todo">
+                    <li class="empty" v-if="indexValue">La tua lista è vuota! Inserisci un nuovo todo!</li>
+                    <li v-for="(item, index) in todo">
                         <span>{{ item }}</span>
-                        <i class="far fa-trash-alt"></i> 
+                        <i class="far fa-trash-alt" @click="remove(index)"></i> 
                     </li>                  
                 </ul>
             </div>

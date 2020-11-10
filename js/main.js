@@ -12,8 +12,9 @@ const app = new Vue ({
 
        userMessage:'',
 
-    },
+       indexValue: false
 
+    },
     methods: {
         submit(){
            if (this.userMessage === '') {this.userMessage =''} else {
@@ -21,6 +22,14 @@ const app = new Vue ({
             this.userMessage = '' 
            } 
            
-        }
-    },    
+        },
+        remove(index) {
+            this.todo.splice(index, 1);
+            if(this.todo.length == 0){
+              this.indexValue = true
+            }
+        },
+    },  
+        
+    
 });
