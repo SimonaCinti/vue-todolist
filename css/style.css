@@ -106,12 +106,17 @@ h1 {
     list-style: none;
 }
 
+
+.list-area .todo-list span::first-letter {
+  text-transform: uppercase; /*! prima lettera maiuscola */
+}
+
 .list-area li {
     display: flex;
     justify-content: space-between;
     background:#457B9D;
     border: 1px solid black;
-    color: white;
+    color: #F1FAEE;
     margin-bottom: 15px;
     padding: 20px;
     border-radius: 5px;
