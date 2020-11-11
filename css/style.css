@@ -31,19 +31,18 @@ h1 {
 
 /* Utilities */
 
-.text-area.only-phone-w330 {
+.text-area.only-phone-w360 {
     display: none;
 }
 
-.display-w331{
-    display: block;
+.display-w361{
+    display: flex;
 }
 
 
 /* Container */
 
 .container {
-    display: flex;
     flex-direction: column;
     max-width: 800px;
     height: 90vh;
@@ -198,9 +197,15 @@ span:hover {
         margin-bottom: 40px;
     }
 
+
+
+    .list-area ul li i {
+        font-size: 18px;
+    }
+
 }
 
-@media screen and (max-width: 330px){
+@media screen and (max-width: 360px){
 
     .title .pencil{
         display: none;
@@ -210,17 +215,17 @@ span:hover {
         flex-wrap: wrap;
     }
 
-    .text-area.only-phone-w330 {
+    .text-area.only-phone-w340 {
         display: flex;
     }
 
-    .display-w331{
+    .display-w341{
         display: none;
     }
 
     ::placeholder,
     .btn,
-    .list-area ul li {
+    .list-area ul li{
         font-size: 16px;
     }
 }
