@@ -6,16 +6,22 @@ const app = new Vue ({
     data: {
         todo: [
             {
-                text:'Studiare',
+                text:'Per aggiungere un testo, scrivi nella barra e premi sulla tastiera invio od il tasto Submit',
+                doneCheck: null,
+            }, 
+            
+            {
+                text:'Premi sul testo quando hai completato la tua task',
                 doneCheck: null,
             },
 
             {
-                text:'Annaffiare le piante',
+                text:'Per cancellare il testo, premi sul cestino',
                 doneCheck: null,
             },
+
             {
-                text:'Capire come fare a scriptare una todolist',
+                text:'Buon lavoro!',
                 doneCheck: null,
             },
         ],
