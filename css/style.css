@@ -29,6 +29,17 @@ h1 {
     text-decoration: line-through;
 }
 
+/* Utilities */
+
+.text-area.only-phone-w330 {
+    display: none;
+}
+
+.display-w331{
+    display: block;
+}
+
+
 /* Container */
 
 .container {
@@ -53,7 +64,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.title i {
+.title .pencil {
     font-size: 30px;
     margin-left: 15px;
     padding-top: 5px; /*! da sistemare in qualche modo per mettere in verticale preciso*/
@@ -160,7 +171,9 @@ span:hover {
         height: 100%;
         margin: 0;
     }
+
     /* Text Area */
+
     .text-area{
         flex-wrap: wrap;
     }
@@ -186,4 +199,30 @@ span:hover {
     }
 
 }
+
+@media screen and (max-width: 330px){
+
+    .title .pencil{
+        display: none;
+    }
+
+    .text-area{
+        flex-wrap: wrap;
+    }
+
+    .text-area.only-phone-w330 {
+        display: flex;
+    }
+
+    .display-w331{
+        display: none;
+    }
+
+    ::placeholder,
+    .btn,
+    .list-area ul li {
+        font-size: 16px;
+    }
+}
+
 
