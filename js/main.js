@@ -20,28 +20,28 @@ const app = new Vue ({
             },
         ],
 
-       userMessage:null,
+       userMessage:'',
 
-       indexValue: false
+       noList: false
 
     },
     methods: {
         submit(){
-           if (this.userMessage.trim() === '') {this.userMessage =''} else {
+           if (this.userMessage.trim() !== ''){
               this.todo.push({
                   text:this.userMessage,
                   doneCheck:'',});
             this.userMessage = '' 
            } 
             if (this.todo.length !== 0) {
-                this.indexValue = false
+                this.noList = false
             }
            
         },
         remove(index) {
             this.todo.splice(index, 1);
             if(this.todo.length == 0){
-              this.indexValue = true
+              this.noList = true
             }
         },
 
