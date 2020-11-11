@@ -17,7 +17,7 @@ const app = new Vue ({
     },
     methods: {
         submit(){
-           if (this.userMessage === '') {this.userMessage =''} else {
+           if (this.userMessage.trim() === '') {this.userMessage =''} else {
               this.todo.push(this.userMessage);
             this.userMessage = '' 
            } 
