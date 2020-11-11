@@ -22,8 +22,6 @@ const app = new Vue ({
 
        userMessage:'',
 
-       noList: false
-
     },
     methods: {
         submit(){
@@ -32,17 +30,10 @@ const app = new Vue ({
                   text:this.userMessage,
                   doneCheck:'',});
             this.userMessage = '' 
-           } 
-            if (this.todo.length !== 0) {
-                this.noList = false
-            }
-           
+           }           
         },
         remove(index) {
             this.todo.splice(index, 1);
-            if(this.todo.length == 0){
-              this.noList = true
-            }
         },
 
         done(index) {

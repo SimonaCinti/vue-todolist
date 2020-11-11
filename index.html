@@ -33,9 +33,9 @@
             <!-- List Area -->
             <div class="list-area">
                 <ul class="todo-list">
-                    <li class="empty" v-if="noList">La tua lista è vuota! Inserisci un nuovo todo!</li>
-                    <li v-for="(item, index) in todo" @click="done(index)">
-                        <span :class="todo[index].doneCheck">{{ item.text }}</span>
+                    <li class="empty" v-if="todo.length == 0">La tua lista è vuota! Inserisci un nuovo todo!</li>
+                    <li v-for="(item, index) in todo">
+                        <span :class="todo[index].doneCheck" @click="done(index)">{{ item.text }}</span>
                         <i class="far fa-trash-alt shake" @click="remove(index)"></i> 
                     </li>                  
                 </ul>
