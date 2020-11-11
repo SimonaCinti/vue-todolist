@@ -20,7 +20,7 @@ const app = new Vue ({
             },
         ],
 
-       userMessage:'',
+       userMessage:null,
 
        indexValue: false
 
@@ -44,6 +44,14 @@ const app = new Vue ({
               this.indexValue = true
             }
         },
+
+        done(index) {
+            if (this.todo[index].doneCheck === ''){
+                this.todo[index].doneCheck = 'line-done'
+            } else {
+                this.todo[index].doneCheck = ''
+            }
+        }
     },  
         
     
