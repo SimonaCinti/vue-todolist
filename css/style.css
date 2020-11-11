@@ -25,6 +25,10 @@ h1 {
     text-transform: capitalize;
 }
 
+.line-done {
+    text-decoration: line-through;
+}
+
 /* Container */
 
 .container {

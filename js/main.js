@@ -5,9 +5,19 @@ const app = new Vue ({
 
     data: {
         todo: [
-            'Studiare',
-            'Annaffiare le piante',
-            'Capire come fare a scriptare una todolist',
+            {
+                text:'Studiare',
+                doneCheck: '',
+            },
+
+            {
+                text:'Annaffiare le piante',
+                doneCheck: '',
+            },
+            {
+                text:'Capire come fare a scriptare una todolist',
+                doneCheck: '',
+            },
         ],
 
        userMessage:'',
@@ -18,7 +28,9 @@ const app = new Vue ({
     methods: {
         submit(){
            if (this.userMessage.trim() === '') {this.userMessage =''} else {
-              this.todo.push(this.userMessage);
+              this.todo.push({
+                  text:this.userMessage,
+                  doneCheck:'',});
             this.userMessage = '' 
            } 
             if (this.todo.length !== 0) {
