@@ -7,16 +7,16 @@ const app = new Vue ({
         todo: [
             {
                 text:'Studiare',
-                doneCheck: '',
+                doneCheck: null,
             },
 
             {
                 text:'Annaffiare le piante',
-                doneCheck: '',
+                doneCheck: null,
             },
             {
                 text:'Capire come fare a scriptare una todolist',
-                doneCheck: '',
+                doneCheck: null,
             },
         ],
 
@@ -28,7 +28,7 @@ const app = new Vue ({
            if (this.userMessage.trim() !== ''){
               this.todo.push({
                   text:this.userMessage,
-                  doneCheck:'',});
+                  doneCheck:null,});
             this.userMessage = '' 
            }           
         },
@@ -37,10 +37,10 @@ const app = new Vue ({
         },
 
         done(index) {
-            if (this.todo[index].doneCheck === ''){
+            if (this.todo[index].doneCheck === null){
                 this.todo[index].doneCheck = 'line-done'
             } else {
-                this.todo[index].doneCheck = ''
+                this.todo[index].doneCheck = null
             }
         }
     },  
