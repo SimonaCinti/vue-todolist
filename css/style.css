@@ -45,8 +45,7 @@ h1 {
 .container {
     flex-direction: column;
     max-width: 800px;
-    height: 90vh;
-    overflow: hidden;
+    min-height: 90vh;
     margin: 30px auto 20px;
     padding: 30px 30px;
     background: #1D3557;
